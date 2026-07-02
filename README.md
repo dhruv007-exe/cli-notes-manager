@@ -8,10 +8,9 @@ A lightweight command-line Notes Manager built in **C++** that allows users to c
 
 - ➕ Add new notes
 - 📋 View all saved notes
-- 🔍 Search notes by title or keyword
+- 🔍 Search notes by title
 - 🗑️ Delete notes
 - 💾 Automatically save notes to a file
-- 📂 Load existing notes on startup
 
 ---
 
