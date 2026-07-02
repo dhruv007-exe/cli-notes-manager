@@ -28,15 +28,12 @@ A lightweight command-line Notes Manager built in **C++** that allows users to c
 
 ```
 CLI-Notes-Manager/
-│── main.cpp
-│── Note.h
-│── Note.cpp
-│── NoteManager.h
-│── NoteManager.cpp
-│── notes.txt
-│── README.md
-│── LICENSE
-│── .gitignore
+│
+├── main.cpp
+├── notes.txt
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
 ---
