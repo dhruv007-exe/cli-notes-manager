@@ -46,7 +46,7 @@ CLI-Notes-Manager/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/cli-notes-manager.git
+git clone https://github.com/dhruv007-exe/cli-notes-manager.git
 ```
 
 ### Navigate to the project
