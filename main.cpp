@@ -24,6 +24,47 @@ void Note :: addNote()
     file << title << "|" << content << endl;
 }
 
+void searchNote()
+{
+    ifstream file("notes.txt");
+
+    string searchTitle;
+
+    cout << "Enter title: ";
+    getline(cin, searchTitle);
+
+    string line;
+    bool found = false;
+
+    while(getline(file, line))
+    {
+        stringstream ss(line);
+
+        string title, content;
+
+        getline(ss, title, '|');
+        getline(ss, content);
+
+        if(title == searchTitle)
+        {
+            cout << "\n========== NOTE FOUND ==========\n";
+            cout << "Title   : " << title << endl;
+            cout << "Content : " << content << endl;
+            cout << "===============================\n";
+
+            found = true;
+        }
+    }
+
+    if(!found)
+    {
+        cout << "\nNo note found with title \"" << searchTitle << "\".\n";
+    }
+
+    file.close();
+}
+
+
 void viewNotes()
 {
     ifstream file("notes.txt");
@@ -82,6 +123,7 @@ int main()
         }
         else if (choice == 3)
         {
+            searchNote();
 
         }
         else if (choice == 4)
